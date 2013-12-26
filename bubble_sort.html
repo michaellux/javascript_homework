@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8"></head>
+<body>
+	<script>
+function BubbleSort(array)       
+{
+    var n = array.length;
+    for (var i = 0; i < n-1; i++)
+    { 
+     	for (var j = 0; j < n-1-i; j++)
+     		{ if (array[j+1] < array[j])
+     			{ 
+     				var t = array[j+1]; array[j+1] = array[j]; array[j] = t; 
+     			}
+     		}
+     	}                     
+    return array;
+}
+alert(BubbleSort([4,5,3,6,4,3,2,5]))
+</script></body>
+</html>
