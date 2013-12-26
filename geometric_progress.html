@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8"></head>
+<body>
+	<script>
+/*
+st - первый член геометрической прогрессии
+n  - член геометрической прогрессии,который необходимо вычислить
+q  - знаменатель геометрической прогрессии
+*/
+function geom_progress(st,n,q)
+{
+var result;
+
+result=st*Math.pow(q,n-1);
+
+return result;
+}
+
+alert(geom_progress(2,7,2));
+
+
+</script>
+
+</body>
+</html>
